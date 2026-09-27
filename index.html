@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+
+ <script>
+  const trackerUrl = "https://site-tk-ecru.vercel.app/api/imagem?site=Site_vitaslimex-Redirecionador";
+  const destino = " https://www.treejammer.com/L1HDNH9/992NJKS/";
+
+  fetch(trackerUrl, {
+    mode: 'no-cors',
+    cache: 'no-store'
+  }).finally(() => {
+    window.location.replace(destino);
+  });
+
+  // Fallback
+  setTimeout(() => {
+    window.location.replace(destino);
+  }, 200);
+</script>
+
+</body>
+</html>
